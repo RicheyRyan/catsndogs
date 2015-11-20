@@ -1,0 +1,16 @@
+{{#each gifs}}
+<div class="animal-gif-container">
+    <div class="animal-gif">
+        <a href="{{url}}">
+            <img width="{{images.original.width}}" height="{{images.original.height}}" src="{{images.original.url}}">
+        </a>
+    </div>
+    <div class="animal-gif-info">
+         <h4>Gif detail:</h4>
+        {{#if source_post_url}}<p>Source: <a href="{{source_post_url}}">{{source_tld}}</a></p>{{/if}}
+        {{#if username}}<p>Uploaded by {{username}}</p>{{/if}}
+    </div>
+    <button type="button" class="view">View details</button>
+    <button type="button" class="hide">Hide</button>
+</div>
+{{/each}}

@@ -1,0 +1,30 @@
+{
+  "name": "catsndogs",
+  "version": "1.0.0",
+  "description": "An app to view animal gifs from giphy",
+  "repository": "https://github.com/richeyryan/catsndogs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "richeyryan",
+  "license": "MIT",
+  "dependencies": {
+    "backbone": "1.2.3",
+    "browserify-handlebars": "1.0.0",
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-cssmin": "0.1.7",
+    "gulp-handlebars": "4.0.0",
+    "gulp-jasmine": "2.2.1",
+    "gulp-jshint": "1.12.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.1.0",
+    "gulp-server-livereload": "1.5.4",
+    "gulp-uglify": "1.5.1",
+    "jquery": "2.1.4",
+    "jquery-lazyload": "1.9.7",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.1.0"
+  }
+}

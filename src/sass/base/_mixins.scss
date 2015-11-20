@@ -1,0 +1,23 @@
+// utilities
+%clearfix {
+    *zoom: 1;
+    &:before, 
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// breakpoints
+@mixin bp-large {
+    @media #{$breakpoint-large} { 
+        @content;
+    }
+}
+
+%border-bottom{
+    border-bottom: 3px $border-color solid;
+}

@@ -1,0 +1,37 @@
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper, .row {
+    @extend %clearfix;
+}
+
+[class*='col-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px; 
+}   
+
+@include bp-large{
+    .wrapper {      
+        width: 95%;
+        max-width: $grid-max-width;
+    }
+    main.wrapper{
+        margin-bottom: 2em;
+    }
+    @for $i from 1 through $grid-columns {      
+        .col-#{$i} {         
+            width: 100% / $grid-columns * $i;   
+        }           
+    }
+
+    .bordered-col{
+        border-left: 1px $border-color dashed;
+        padding-left: 1em;
+    }
+
+    
+}

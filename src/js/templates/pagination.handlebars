@@ -1,0 +1,17 @@
+<div class="pagination">
+     <p class="page-number"><strong>Page {{pageNumber}} of {{pages}} pages</strong></p>
+     <div class="button-container">
+          {{#if prev}}
+          <button type="button" rel="prev">Previous</button>
+          {{else}}
+          &nbsp;
+          {{/if}}
+     </div>
+     <div class="button-container">
+          {{#if next}}
+          <button type="button" rel="next">Next</button>
+          {{else}}
+          &nbsp;
+          {{/if}}
+     </div>
+</div>

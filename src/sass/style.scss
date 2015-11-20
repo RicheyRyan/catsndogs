@@ -1,0 +1,16 @@
+// Import base styles
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/typography';
+@import 'base/reset';
+@import 'base/grid';
+@import 'base/buttons';
+
+//components
+@import 'components/header';
+@import 'components/sidebar';
+@import 'components/footer';
+@import 'components/tabs';
+@import 'components/animal-list';
+@import 'components/animal';
+@import 'components/loading';

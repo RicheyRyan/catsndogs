@@ -1,0 +1,18 @@
+button[type="button"]{
+    margin: 0 auto;
+    display: block;
+    padding: .5em 1em;
+    border-radius: .2em;
+    transition: all .2s;
+    cursor: pointer;
+    background-color: #ccc;
+    border: 2px #666 solid;
+
+    &:hover{
+        background-color: #999;
+    }
+
+    &.selected{
+        background-color: #999;
+    }
+}

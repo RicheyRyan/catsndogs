@@ -1,0 +1,102 @@
+body{
+    font: #{$base-font-size}/#{$base-line-height $font-stack};
+    color: $body-color;
+}
+
+p, h1, h2, h3, h4, blockquote{
+    margin-bottom: 1em;
+}
+
+a{
+    &.no-underline{
+        text-decoration: none;
+    }
+    &:visited{
+        color: $body-color;
+    }
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+h1{
+    font-size: 2em;
+    line-height: 2.5;
+}
+
+h2{
+    font-size: 1.625em;
+    line-height: 1.15;
+}
+
+h3{
+    font-size: 1.375em;
+    line-height: 1.13;
+}
+
+h4{
+    font-size: 1.125em;
+    line-height: 1.11;
+}
+
+blockquote{
+    font-size: 1.25em;
+    line-height: 1.25;
+    background: #f9f9f9;
+    border-left: 5px solid $border-color;
+    padding: 0.5em .8em;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    &:before{
+        color: #ccc;
+        content: open-quote;
+        font-size: 2em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+}
+
+strong{
+    font-weight: bold;
+}
+
+cite, subtitle{
+    font-size: .8em;
+}
+
+@include bp-large{
+    h1{
+        font-size: 3em;
+        line-height: 1.05;
+    }
+
+    h2{
+        font-size: 2.25em;
+        line-height: 1.25;
+    }
+
+    h3{
+        font-size: 1.75em;
+        line-height: 1.25;
+    }
+
+    h4{
+        font-size: 1.125em;
+        line-height: 1.22;
+    }
+
+    blockquote{
+        font-size: 1.5em;
+        line-height: 1.45;
+    }
+
+    cite, subtitle{
+        font-size: .6em;
+    }
+}

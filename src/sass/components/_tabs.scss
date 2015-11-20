@@ -1,0 +1,15 @@
+.animal-tabs{
+    @extend %clearfix;
+}
+
+.animal-tab-container{
+    width: 50%;
+    float: left;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    @extend %border-bottom;
+}
+
+.tab-button{
+    font-size: 1.6em;
+}
